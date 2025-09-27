@@ -1,4 +1,3 @@
-
 package collegedemo;
 import java.sql.*;
 import java.util.*;
@@ -36,7 +35,7 @@ Connection con=DriverManager.getConnection("jdbc:mysql://localhost/collegedemos1
 	                        System.out.print("Enter roll number to delete: ");
 	                        int rollToDelete = sc.nextInt();
 	                        String deleteQuery = "DELETE FROM stud WHERE rollno =rollToDelete;
- rollToDelete;
+ 
 	                        int rowsAffected = stm.executeUpdate(deleteQuery);
 	                        if (rowsAffected > 0) {
 	                            System.out.println("Record deleted successfully.");
@@ -72,7 +71,7 @@ System.out.println(e);
 
 
 
-
+Execution
 --- MENU ---
 1. Insert student record
 2. Delete student record
@@ -117,5 +116,6 @@ Record deleted successfully.
 3. Exit
 Enter your choice: 3
  Exiting program...
+
 
 
